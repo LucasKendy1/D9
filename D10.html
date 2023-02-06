@@ -6,45 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redes Sociais</title>
     <style>
+        *{
+            margin: 0;
+        }
+        :root{
+            --cor1:#595F72;
+            --cor2:#575D90;
+            --cor3:#84A07C;
+            --cor4:#C3D350;
+            --cor5:#E6F14A;
+        }
         .imagem{
             width: 30px;
-            
         }
         body{
-            
+            background-color: var(--cor2);
             color: black;
             font-family: consolas;
         }
-        p,h1,h2{
+        header{
+            color: white;
             text-align: center;
+            background-color: #84A07C;
+            height: 150px;
+            padding-top: 20px;
         }
-        p{
+        main{
             text-align: justify;
             padding: 50px;
             font-size: 15pt;
+            color: white;
+            max-width: 500px;
+            margin: auto;
         }
         img#foto{
            box-shadow: 10px 10px rgba(0, 0, 0, 0.493); 
-           border-radius: 150px;
+           border-radius: 50%;
+           margin: 40px auto 40px;
+           display: block;
+           position: absolute;
         }
-        div{
-            display: flex;
-            justify-content: center;
+        footer{
+            color: white;
+            font-size: larger;
+            text-align: center;
+            background-color: #595F72;
+            padding: 10px;
+            bottom: 0;
+            position: fixed;
+            border-top-right-radius:10px; 
         }
-        
+        section{
+            background-color: white;
+            color: #575D90;
+            text-align: center;
+            max-width: 500px;
+            margin: 80px auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.363);
+            padding: 10px;
+        }
+        h3{
+            font-size: 1.5em;
+        }
+        ul{
+            text-align: left;
+        }
     </style>
 </head>
 <body>
-    <h1>Minhas Redes Sociais</h1>
-    <h2>Quem sou eu?</h2>
-    <div><img id="foto" src="https://thumbs2.imgbox.com/17/58/MPOGILY1_t.jpg" alt="image host"/></div>
-    <p>Meu nome é <strong>Lucas Kendy</strong>, tenho 20 anos e sou apaixonado por tecnologia. Estou desde 2015 estudando a área, como Automação Industrial, Manutenção Mecânica, Elétrica, Eletrônica, e agora, tive a oportunidade de estudar em uma das melhores faculdades de tecnologia do país, a Fatec. Estou cursando o segundo semestre em Análise e Desenvolvimento de Sistemas e pretendo seguir carreira nessa área, não é a toa que estou estudando e fazendo esse desafio nas férias da Fatec. Atualmente estou procurando uma vaga de estágio na área de desenvolvimento, mais focada em Front-End pois acho que tenho mais familiaridade com a parte de desing, cores, formas, mas também em suas funcionalidades, por isso decidi estudar bastante HTML, CSS e JAVASCRIPT </p>
-    <h2>Como falar comigo?</h2>
-    <ul>
-        <li><img class="imagem" src="https://live.staticflickr.com/65535/52657782067_587bc761a1_m.jpg" alt=""><a target="_blank" rel="external" href="https://www.youtube.com/@lucaskendy3943/videos">/lucaskendy3943</a></li>
-        <li><img class="imagem" src="https://live.staticflickr.com/65535/52658273961_ec6681f286_m.jpg" alt=""><a target="_blank" rel="external" href="https://www.instagram.com/lucaskendy2/">/lucaskendy2</a></li>
-        <li><img class="imagem" src="https://live.staticflickr.com/65535/52658766778_8e98991f94_m.jpg" alt=""><a target="_blank" rel="external" href="https://www.linkedin.com/in/lucas-kendy-28931a196/">/lucas-kendy-28931a196</a></li>
-        <li><img class="imagem" src="https://live.staticflickr.com/65535/52658273896_97cb089e4e_m.jpg" alt=""><a target="_blank" rel="external" href="">(55)1197300-7145</a></li>
-        <li><img class="imagem" src="https://live.staticflickr.com/65535/52657782092_55825b9e2d_m.jpg" alt=""><a target="_blank" rel="external" href="lucaskendy2002@gmail.com">lucaskendy2002@gmail.com</a></li>
-    </ul>
+    <header>
+        <h1>Minhas Redes Sociais</h1>
+        <h2>Quem sou eu?</h2>
+    </header>
+    <main>
+        <div><img id="foto" src="https://thumbs2.imgbox.com/17/58/MPOGILY1_t.jpg" alt="image host"/></div>
+        <p>Meu nome é <strong>Lucas Kendy</strong>, tenho 20 anos. Estou cursando o segundo semestre em Análise e Desenvolvimento de Sistemas. Atualmente estou procurando uma vaga de estágio na área de desenvolvimento, mais focada em Front-End pois acho que tenho mais familiaridade com a parte de desing, cores, formas, mas também em suas funcionalidades, por isso decidi estudar bastante HTML, CSS e JAVASCRIPT </p>
+    </main>
+    <section>
+        <h3>Como falar comigo?</h3>
+        <ul>
+            <li><img class="imagem" src="youtube.png" alt=""><a target="_blank" rel="external" href="https://www.youtube.com/@lucaskendy3943/videos">youtube</a></li>
+            <li><img class="imagem" src="instagram.png" alt=""><a target="_blank" rel="external" href="https://www.instagram.com/lucaskendy2/">instagram</a></li>
+            <li><img class="imagem" src="linkedin.png" alt=""><a target="_blank" rel="external" href="https://www.linkedin.com/in/lucas-kendy-28931a196/">linkedin</a></li>
+            <li><img class="imagem" src="whatsapp.png" alt=""><a target="_blank" rel="external" href="">whatsapp</a></li>
+            <li><img class="imagem" src="o-email.png" alt=""><a target="_blank" rel="external" href="lucaskendy2002@gmail.com">email</a></li>
+            <li><img class="imagem" src="github.png" alt=""><a target="_blank" rel="external" href="https://github.com/LucasKendy1">github</a></li>
+        </ul>
+    </section>
+    <footer>
+        <i>By: Lucas Kendy</i>
+    </footer>
 </body>
